@@ -8,7 +8,7 @@ mod error {
 
     #[derive(Snafu, Debug)]
     #[snafu(context(suffix(false)), visibility(pub(crate)))]
-    pub(crate) enum Error {
+    pub enum Error {
         ContextIncomplete {
             #[snafu(backtrace)]
             source: expression::Error,
@@ -78,9 +78,12 @@ where
     }
 }
 
-pub(crate) trait Concretize {
+/// Allows to concretize operations.
+pub trait Concretize {
+    /// Concrete operation type.
     type Concrete;
 
+    /// Concretizes a specific operation.
     fn concretize(&self, ctx: Context) -> Result<Self::Concrete, error::Error>;
 }
 
@@ -196,7 +199,8 @@ impl AbstractOp {
         Self::Op(op.into())
     }
 
-    pub(crate) fn concretize(self, ctx: Context) -> Result<Op<[u8]>, error::Error> {
+    /// Concretizes operations.
+    pub fn concretize(self, ctx: Context) -> Result<Op<[u8]>, error::Error> {
         match self {
             Self::Op(op) => op.concretize(ctx),
             Self::Push(imm) => {
