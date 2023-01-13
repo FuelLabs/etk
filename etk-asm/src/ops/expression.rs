@@ -35,6 +35,13 @@ pub struct Context<'a> {
 }
 
 impl<'a> Context<'a> {
+    /// Creates a new context.
+    pub fn new() -> Self {
+        Self {
+            ..Default::default()
+        }
+    }
+
     /// Looks up a label in the current context.
     pub fn get_label(&self, key: &str) -> Option<&Option<usize>> {
         match self.labels {
