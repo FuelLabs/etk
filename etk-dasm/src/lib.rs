@@ -7,5 +7,9 @@
 #![deny(unreachable_pub)]
 #![deny(missing_debug_implementations)]
 
+#[path = "bin/disease/selectors.rs"]
+mod selectors;
+pub use crate::selectors::DisplayOp;
+
 pub mod blocks;
 pub mod sym;
