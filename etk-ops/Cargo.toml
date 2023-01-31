@@ -1,5 +1,5 @@
 [package]
-name = "etk-ops"
+name = "fuel-etk-ops"
 version = "0.3.0-dev"
 authors = ["Sam Wilson <sam.wilson@mesh.xyz>", "lightclient <lightclient@protonmail.com>"]
 license = "MIT OR Apache-2.0"

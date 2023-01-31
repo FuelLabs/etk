@@ -410,68 +410,13 @@ version = "0.3.0-dev"
 dependencies = [
  "assert_matches",
  "clap 3.1.18",
- "etk-asm",
- "etk-cli",
- "etk-dasm",
+ "fuel-etk-asm",
+ "fuel-etk-cli",
+ "fuel-etk-dasm",
  "hex-literal",
  "petgraph",
  "snafu",
  "z3",
-]
-
-[[package]]
-name = "etk-asm"
-version = "0.3.0-dev"
-dependencies = [
- "assert_matches",
- "clap 3.1.18",
- "etk-cli",
- "etk-ops",
- "hex",
- "hex-literal",
- "num-bigint",
- "pest",
- "pest_derive",
- "rand",
- "sha3",
- "snafu",
- "tempfile",
-]
-
-[[package]]
-name = "etk-cli"
-version = "0.3.0-dev"
-dependencies = [
- "clap 3.1.18",
- "hex",
- "hex-literal",
- "snafu",
-]
-
-[[package]]
-name = "etk-dasm"
-version = "0.3.0-dev"
-dependencies = [
- "clap 3.1.18",
- "etk-4byte",
- "etk-asm",
- "etk-cli",
- "etk-ops",
- "hex",
- "hex-literal",
- "snafu",
-]
-
-[[package]]
-name = "etk-ops"
-version = "0.3.0-dev"
-dependencies = [
- "educe",
- "indexmap",
- "quote",
- "serde",
- "snafu",
- "toml",
 ]
 
 [[package]]
@@ -524,6 +469,61 @@ checksum = "5fc25a87fa4fd2094bffb06925852034d90a17f0d1e05197d4956d3555752191"
 dependencies = [
  "matches",
  "percent-encoding",
+]
+
+[[package]]
+name = "fuel-etk-asm"
+version = "0.3.0-dev"
+dependencies = [
+ "assert_matches",
+ "clap 3.1.18",
+ "fuel-etk-cli",
+ "fuel-etk-ops",
+ "hex",
+ "hex-literal",
+ "num-bigint",
+ "pest",
+ "pest_derive",
+ "rand",
+ "sha3",
+ "snafu",
+ "tempfile",
+]
+
+[[package]]
+name = "fuel-etk-cli"
+version = "0.3.0-dev"
+dependencies = [
+ "clap 3.1.18",
+ "hex",
+ "hex-literal",
+ "snafu",
+]
+
+[[package]]
+name = "fuel-etk-dasm"
+version = "0.3.0-dev"
+dependencies = [
+ "clap 3.1.18",
+ "etk-4byte",
+ "fuel-etk-asm",
+ "fuel-etk-cli",
+ "fuel-etk-ops",
+ "hex",
+ "hex-literal",
+ "snafu",
+]
+
+[[package]]
+name = "fuel-etk-ops"
+version = "0.3.0-dev"
+dependencies = [
+ "educe",
+ "indexmap",
+ "quote",
+ "serde",
+ "snafu",
+ "toml",
 ]
 
 [[package]]

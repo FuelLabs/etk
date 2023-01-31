@@ -1,6 +1,7 @@
 use etk_cli::errors::WithSources;
 use etk_cli::io::HexWrite;
 
+extern crate fuel_etk_asm as etk_asm;
 use etk_asm::ingest::{Error, Ingest};
 
 use std::fs::File;

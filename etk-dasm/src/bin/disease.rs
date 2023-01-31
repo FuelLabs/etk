@@ -10,6 +10,7 @@ use etk_asm::disasm::{Disassembler, Offset};
 
 use etk_cli::errors::WithSources;
 
+extern crate fuel_etk_dasm as etk_dasm;
 use etk_dasm::blocks::basic::Separator;
 
 use snafu::{Backtrace, Snafu};

@@ -1,5 +1,5 @@
 [package]
-name = "etk-asm"
+name = "fuel-etk-asm"
 version = "0.3.0-dev"
 authors = ["Sam Wilson <sam.wilson@mesh.xyz>", "lightclient <lightclient@protonmail.com>"]
 license = "MIT OR Apache-2.0"
@@ -16,8 +16,8 @@ cli = ["clap", "etk-cli"]
 backtraces = [ "snafu/backtraces", "etk-ops/backtraces" ]
 
 [dependencies]
-etk-ops = { path = "../etk-ops", version = "0.3.0-dev" }
-etk-cli = { optional = true, path = "../etk-cli", version = "0.3.0-dev" }
+etk-ops = { package = "fuel-etk-ops", path = "../etk-ops", version = "0.3.0-dev" }
+etk-cli = { package = "fuel-etk-cli", optional = true, path = "../etk-cli", version = "0.3.0-dev" }
 hex = "0.4.3"
 num-bigint = "0.4"
 pest = "2.1.3"

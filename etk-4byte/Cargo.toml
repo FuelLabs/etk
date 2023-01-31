@@ -1,5 +1,5 @@
 [package]
-name = "etk-4byte"
+name = "fuel-etk-4byte"
 version = "0.3.0-dev"
 authors = ["Sam Wilson <sam.wilson@mesh.xyz>"]
 license = "MIT OR Apache-2.0"
