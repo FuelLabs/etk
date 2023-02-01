@@ -1,6 +1,6 @@
 [package]
 name = "fuel-etk-dasm"
-version = "0.3.0-dev"
+version = "0.3.1-dev"
 authors = ["Sam Wilson <sam.wilson@mesh.xyz>", "lightclient <lightclient@protonmail.com>"]
 license = "MIT OR Apache-2.0"
 edition = "2018"
@@ -16,11 +16,11 @@ cli = ["clap", "etk-cli", "snafu"]
 
 [dependencies]
 hex = "0.4.3"
-etk-ops = { package = "fuel-etk-ops", path = "../etk-ops", version = "0.3.0-dev" }
-etk-asm = { package = "fuel-etk-asm", path = "../etk-asm", version = "0.3.0-dev" }
+etk-ops = { package = "fuel-etk-ops", path = "../etk-ops", version = "0.3.1-dev" }
+etk-asm = { package = "fuel-etk-asm", path = "../etk-asm", version = "0.3.1-dev" }
 clap = { optional = true, version = "3.1", features = ["derive"] }
-etk-cli = { optional = true, package = "fuel-etk-cli", path = "../etk-cli", version = "0.3.0-dev" }
-etk-4byte = { package = "fuel-etk-4byte", path = "../etk-4byte", version = "0.3.0-dev" }
+etk-cli = { optional = true, package = "fuel-etk-cli", path = "../etk-cli", version = "0.3.1-dev" }
+etk-4byte = { package = "fuel-etk-4byte", path = "../etk-4byte", version = "0.3.1-dev" }
 snafu = { optional = true, version = "0.7.1" }
 
 [dev-dependencies]

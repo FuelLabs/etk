@@ -1,6 +1,6 @@
 [package]
 name = "etk-analyze"
-version = "0.3.0-dev"
+version = "0.3.1-dev"
 edition = "2018"
 authors = ["Sam Wilson <sam.wilson@mesh.xyz>", "lightclient <lightclient@protonmail.com>"]
 license = "MIT OR Apache-2.0"
@@ -17,9 +17,9 @@ cli = ["etk-cli", "etk-asm", "clap", "snafu"]
 [dependencies]
 snafu = { optional = true, version = "0.7.1" }
 clap = { optional = true, version = "3.1", features = ["derive"] }
-etk-cli = { optional = true, package = "fuel-etk-cli", path = "../etk-cli", version = "0.3.0-dev" }
-etk-asm = { optional = true, package = "fuel-etk-asm", path = "../etk-asm", version = "0.3.0-dev" }
-etk-dasm = { package = "fuel-etk-dasm", path = "../etk-dasm", version = "0.3.0-dev" }
+etk-cli = { optional = true, package = "fuel-etk-cli", path = "../etk-cli", version = "0.3.1-dev" }
+etk-asm = { optional = true, package = "fuel-etk-asm", path = "../etk-asm", version = "0.3.1-dev" }
+etk-dasm = { package = "fuel-etk-dasm", path = "../etk-dasm", version = "0.3.1-dev" }
 z3 = "0.11.2"
 
 [dependencies.petgraph]
@@ -28,7 +28,7 @@ default-features = false
 
 [dev-dependencies]
 assert_matches = "1.5.0"
-etk-asm = { package = "fuel-etk-asm", path = "../etk-asm", version = "0.3.0-dev" }
+etk-asm = { package = "fuel-etk-asm", path = "../etk-asm", version = "0.3.1-dev" }
 hex-literal = "0.3.4"
 
 [[bin]]
